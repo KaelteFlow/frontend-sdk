@@ -10,7 +10,7 @@ export class UserService {
   dataService = inject(DATA_PROVIDER);
 
   getUsers(q: string): Observable<UsersResponse> {
-    return this.dataService.get<UsersResponse>("v1/accounts", {
+    return this.dataService.get<UsersResponse>("v1/users", {
       query: {
         q
       }
@@ -18,7 +18,7 @@ export class UserService {
   }
 
   getUser(id: string): Observable<UserResponse> {
-    return this.dataService.get<UserResponse>("v1/accounts/{0}", {
+    return this.dataService.get<UserResponse>("v1/users/{0}", {
       params: [id]
     });
   }

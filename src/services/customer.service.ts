@@ -42,7 +42,7 @@ export class CustomerService {
     q: string,
     customer: IDatabaseEntry<ICustomer> | string,
   ): Observable<UsersResponse> {
-    return this.dataService.get<UsersResponse>('v1/accounts', {
+    return this.dataService.get<UsersResponse>('v1/users', {
       query: {
         q,
         customer: typeof customer === 'string' ? customer : customer._id

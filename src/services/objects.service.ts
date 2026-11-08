@@ -34,7 +34,7 @@ export class ObjectsService {
       q: string,
       customerObject: IDatabaseEntry<CustomerObject>,
   ): Observable<UsersResponse> {
-    return this.dataService.get<UsersResponse>('v1/accounts', {
+    return this.dataService.get<UsersResponse>('v1/users', {
       query: {
         q,
         object: customerObject._id
