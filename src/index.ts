@@ -2,6 +2,7 @@
 // Definations
 // ============================================================================
 export * from './definations/Modul';
+export * from './definations/NavigationItem';
 
 // ============================================================================
 // Providers & Interfaces
