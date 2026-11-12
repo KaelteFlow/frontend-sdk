@@ -1,7 +1,9 @@
-import {MaybeAsync, Route, Routes} from "@angular/router";
+import {MaybeAsync, Routes} from "@angular/router";
+import {INavigationRoute} from "./Navigation";
 
 export interface IFrontendModule {
-    routes?: Route | Routes;
+    routes?: Routes;
+    navigation?: INavigationRoute[];
 
     init?(context: IFrontendContext): MaybeAsync<void>;
 }

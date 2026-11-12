@@ -7,6 +7,9 @@
   "main": "./dist/fesm2022/kaelteflow-frontend-sdk.mjs",
   "module": "./dist/fesm2022/kaelteflow-frontend-sdk.mjs",
   "typings": "./dist/types/kaelteflow-frontend-sdk.d.ts",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/types/kaelteflow-frontend-sdk.d.ts",
